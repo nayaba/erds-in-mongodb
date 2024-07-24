@@ -1,3 +1,5 @@
+- Ask for examples
+
 In Entity-Relationship Diagrams (ERD), relationships between entities are fundamental to modeling the structure of a database. These relationships can be categorized into three main types: one-to-one, one-to-many, and many-to-many. Here’s a detailed explanation of each:
 
 ### 1. One-to-One (1:1) Relationship
@@ -36,9 +38,9 @@ A many-to-many relationship occurs when multiple records in one entity are relat
 Student >-----< Course
 ```
 
-In the above example, to implement the many-to-many relationship, you would create a junction table, such as **StudentCourse**, which would have foreign keys referencing both the **Student** and **Course** tables.
+In the above example, to implement the many-to-many relationship, you would create a join table, such as **StudentCourse**, which would have foreign keys referencing both the **Student** and **Course** tables.
 
-**Junction Table:**
+**Join Table:**
 
 ```
 Student -----< StudentCourse >----- Course
@@ -47,7 +49,7 @@ Student -----< StudentCourse >----- Course
 ### Summary
 - **One-to-One (1:1)**: A single record in one entity is related to a single record in another entity.
 - **One-to-Many (1:M)**: A single record in one entity is related to multiple records in another entity.
-- **Many-to-Many (M:N)**: Multiple records in one entity are related to multiple records in another entity, typically implemented using a junction table.
+- **Many-to-Many (M:N)**: Multiple records in one entity are related to multiple records in another entity, typically implemented using a join table.
 
 These relationships help in structuring the database in a way that reduces redundancy and improves data integrity.
 
